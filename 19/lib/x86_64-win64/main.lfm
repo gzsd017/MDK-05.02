@@ -1,0 +1,366 @@
+object Form1: TForm1
+  Left = 454
+  Height = 366
+  Top = 261
+  Width = 340
+  BorderStyle = bsSingle
+  Caption = 'Калькулятор'
+  ClientHeight = 366
+  ClientWidth = 340
+  Color = 15967215
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object Edit: TEdit
+    Left = 18
+    Height = 32
+    Top = 8
+    Width = 308
+    Alignment = taRightJustify
+    AutoSize = False
+    Color = clNone
+    Enabled = False
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlack
+    Font.Height = -17
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    Text = '0'
+  end
+  object Del: TButton
+    Left = 16
+    Height = 54
+    Top = 48
+    Width = 118
+    Caption = '<-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    OnClick = DelClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Num7: TButton
+    Left = 16
+    Height = 52
+    Top = 112
+    Width = 54
+    Caption = '7'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Num7Click
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Num8: TButton
+    Left = 80
+    Height = 52
+    Top = 112
+    Width = 54
+    Caption = '8'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Num8Click
+    ParentFont = False
+    TabOrder = 6
+  end
+  object Num9: TButton
+    Left = 144
+    Height = 52
+    Top = 112
+    Width = 54
+    Caption = '9'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Num9Click
+    ParentFont = False
+    TabOrder = 7
+  end
+  object Delit: TButton
+    Left = 208
+    Height = 52
+    Top = 112
+    Width = 54
+    Caption = '/'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = DelitClick
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Del2: TButton
+    Left = 208
+    Height = 52
+    Top = 48
+    Width = 54
+    Caption = 'c'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Del2Click
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Del1: TButton
+    Left = 144
+    Height = 52
+    Top = 48
+    Width = 54
+    Caption = 'ce'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clSilver
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Del1Click
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Koren: TButton
+    Left = 272
+    Height = 52
+    Top = 48
+    Width = 54
+    Caption = 'Kop'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = KorenClick
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Kvadrat: TButton
+    Left = 272
+    Height = 52
+    Top = 112
+    Width = 54
+    Caption = 'x^2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = KvadratClick
+    ParentFont = False
+    TabOrder = 9
+  end
+  object Num4: TButton
+    Left = 16
+    Height = 52
+    Top = 176
+    Width = 54
+    Caption = '4'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Num4Click
+    ParentFont = False
+    TabOrder = 10
+  end
+  object Num5: TButton
+    Left = 80
+    Height = 52
+    Top = 176
+    Width = 54
+    Caption = '5'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Num5Click
+    ParentFont = False
+    TabOrder = 11
+  end
+  object Num6: TButton
+    Left = 144
+    Height = 52
+    Top = 176
+    Width = 54
+    Caption = '6'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Num6Click
+    ParentFont = False
+    TabOrder = 12
+  end
+  object Umnozh: TButton
+    Left = 208
+    Height = 52
+    Top = 176
+    Width = 54
+    Caption = '*'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = UmnozhClick
+    ParentFont = False
+    TabOrder = 13
+  end
+  object Drob: TButton
+    Left = 272
+    Height = 52
+    Top = 176
+    Width = 54
+    Caption = '1/x'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = DrobClick
+    ParentFont = False
+    TabOrder = 14
+  end
+  object Num1: TButton
+    Left = 16
+    Height = 52
+    Top = 240
+    Width = 54
+    Caption = '1'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Num1Click
+    ParentFont = False
+    TabOrder = 15
+  end
+  object Num2: TButton
+    Left = 80
+    Height = 52
+    Top = 240
+    Width = 54
+    Caption = '2'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Num2Click
+    ParentFont = False
+    TabOrder = 16
+  end
+  object Num3: TButton
+    Left = 144
+    Height = 52
+    Top = 240
+    Width = 54
+    Caption = '3'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Num3Click
+    ParentFont = False
+    TabOrder = 17
+  end
+  object Minus: TButton
+    Left = 208
+    Height = 52
+    Top = 240
+    Width = 54
+    Caption = '-'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = MinusClick
+    ParentFont = False
+    TabOrder = 18
+  end
+  object Zapyat: TButton
+    Left = 144
+    Height = 52
+    Top = 304
+    Width = 54
+    Caption = ','
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = ZapyatClick
+    ParentFont = False
+    TabOrder = 21
+  end
+  object Plus: TButton
+    Left = 208
+    Height = 52
+    Top = 304
+    Width = 54
+    Caption = '+'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = PlusClick
+    ParentFont = False
+    TabOrder = 22
+  end
+  object Num0: TButton
+    Left = 16
+    Height = 52
+    Top = 304
+    Width = 118
+    Caption = '0'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = Num0Click
+    ParentFont = False
+    TabOrder = 20
+  end
+  object Ravno: TButton
+    Left = 272
+    Height = 116
+    Top = 240
+    Width = 54
+    Caption = '='
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Copperplate Gothic Bold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = RavnoClick
+    ParentFont = False
+    TabOrder = 19
+  end
+end
