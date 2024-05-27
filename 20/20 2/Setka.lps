@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Setka.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="fmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="fMain"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="35"/>
+        <CursorPos X="31" Y="57"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="4">
+      <Position>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="14"/>
+      </Position>
+      <Position>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="18"/>
+      </Position>
+      <Position>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="20"/>
+      </Position>
+      <Position>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="23" Column="14" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="fmain.pas"/>
+        <Caret Line="64" Column="3" TopLine="24"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="fmain.pas"/>
+        <Line Value="23"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>
