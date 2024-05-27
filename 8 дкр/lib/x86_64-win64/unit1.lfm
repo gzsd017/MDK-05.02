@@ -1,0 +1,303 @@
+object Form1: TForm1
+  Left = 266
+  Height = 1000
+  Top = 101
+  Width = 1000
+  Caption = 'Калькулятор простых и сложных процентов'
+  ClientHeight = 1000
+  ClientWidth = 1000
+  Color = 15711987
+  Constraints.MaxHeight = 1000
+  Constraints.MaxWidth = 1000
+  Constraints.MinHeight = 1000
+  Constraints.MinWidth = 1000
+  DesignTimePPI = 120
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 120
+    Height = 40
+    Top = 32
+    Width = 702
+    Caption = 'Калькулятор простых и сложных процентов'
+    Color = 15988179
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -30
+    Font.Name = 'Cascadia Code'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Start_summ: TLabel
+    Left = 176
+    Height = 30
+    Top = 112
+    Width = 195
+    Caption = 'Начальная сумма'
+    Color = 15988179
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Cascadia Code'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Percent: TLabel
+    Left = 176
+    Height = 30
+    Top = 208
+    Width = 221
+    Caption = 'Процентная ставка'
+    Color = 15988179
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Cascadia Code'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Input_summ: TEdit
+    Left = 592
+    Height = 50
+    Top = 96
+    Width = 250
+    Constraints.MaxHeight = 50
+    Constraints.MaxWidth = 250
+    Constraints.MinHeight = 50
+    Constraints.MinWidth = 250
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Bookman Old Style'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Calculate: TButton
+    Left = 624
+    Height = 50
+    Top = 384
+    Width = 150
+    Caption = 'Рассчитать'
+    Constraints.MaxHeight = 50
+    Constraints.MaxWidth = 150
+    Constraints.MinHeight = 50
+    Constraints.MinWidth = 150
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'Bookman Old Style'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    OnClick = CalculateClick
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Clear: TButton
+    Left = 216
+    Height = 50
+    Top = 384
+    Width = 150
+    Caption = 'Очистить'
+    Constraints.MaxHeight = 50
+    Constraints.MaxWidth = 150
+    Constraints.MinHeight = 50
+    Constraints.MinWidth = 150
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'Bookman Old Style'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    OnClick = ClearClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Output_simple: TEdit
+    Left = 592
+    Height = 50
+    Top = 472
+    Width = 250
+    Constraints.MaxHeight = 50
+    Constraints.MaxWidth = 250
+    Constraints.MinHeight = 50
+    Constraints.MinWidth = 250
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Bookman Old Style'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object Output_hard: TEdit
+    Left = 592
+    Height = 50
+    Top = 552
+    Width = 250
+    Constraints.MaxHeight = 50
+    Constraints.MaxWidth = 250
+    Constraints.MinHeight = 50
+    Constraints.MinWidth = 250
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Bookman Old Style'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 4
+  end
+  object Simple: TLabel
+    Left = 176
+    Height = 30
+    Top = 488
+    Width = 209
+    Caption = 'Простые проценты'
+    Color = 15988179
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Cascadia Code'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Hard: TLabel
+    Left = 176
+    Height = 30
+    Top = 568
+    Width = 209
+    Caption = 'Сложные проценты'
+    Color = 15988179
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Cascadia Code'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Decision: TButton
+    Left = 32
+    Height = 35
+    Top = 824
+    Width = 160
+    Caption = 'Показать решение'
+    Constraints.MaxHeight = 35
+    Constraints.MaxWidth = 160
+    Constraints.MinHeight = 35
+    Constraints.MinWidth = 160
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Bookman Old Style'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    OnClick = DecisionClick
+    ParentFont = False
+    TabOrder = 5
+  end
+  object Exitt: TBitBtn
+    Left = 864
+    Height = 35
+    Top = 824
+    Width = 100
+    Caption = 'Выход'
+    Constraints.MaxHeight = 35
+    Constraints.MaxWidth = 100
+    Constraints.MinHeight = 35
+    Constraints.MinWidth = 100
+    Kind = bkAbort
+    ModalResult = 3
+    OnClick = ExittClick
+    TabOrder = 6
+  end
+  object Year: TLabel
+    Left = 176
+    Height = 30
+    Top = 296
+    Width = 183
+    Caption = 'Количество лет'
+    Color = 15988179
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Cascadia Code'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object Input_percent: TSpinEdit
+    Left = 592
+    Height = 50
+    Top = 192
+    Width = 250
+    Constraints.MaxHeight = 50
+    Constraints.MaxWidth = 250
+    Constraints.MinHeight = 50
+    Constraints.MinWidth = 250
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Bookman Old Style'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxValue = 99
+    MinValue = 1
+    ParentFont = False
+    TabOrder = 7
+    Value = 1
+  end
+  object Input_year: TSpinEdit
+    Left = 592
+    Height = 50
+    Top = 288
+    Width = 250
+    Constraints.MaxHeight = 50
+    Constraints.MaxWidth = 250
+    Constraints.MinHeight = 50
+    Constraints.MinWidth = 250
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -23
+    Font.Name = 'Bookman Old Style'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    MaxValue = 99
+    MinValue = 1
+    ParentFont = False
+    TabOrder = 8
+    Value = 1
+  end
+  object Output_decision: TMemo
+    Left = 240
+    Height = 305
+    Top = 664
+    Width = 584
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -18
+    Font.Name = 'Cambria'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Lines.Strings = (
+      ''
+    )
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 9
+  end
+end
