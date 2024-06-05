@@ -1,0 +1,75 @@
+object fMain: TfMain
+  Left = 319
+  Height = 400
+  Top = 212
+  Width = 800
+  Align = alTop
+  BorderStyle = bsDialog
+  Caption = 'Клиент интернет-магазина'
+  ClientHeight = 400
+  ClientWidth = 800
+  Constraints.MaxHeight = 400
+  Constraints.MaxWidth = 800
+  Constraints.MinHeight = 400
+  Constraints.MinWidth = 800
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.2.4.0'
+  object Panel1: TPanel
+    Left = 8
+    Height = 27
+    Top = 0
+    Width = 790
+    ClientHeight = 27
+    ClientWidth = 790
+    Constraints.MaxHeight = 27
+    Constraints.MaxWidth = 790
+    Constraints.MinHeight = 27
+    Constraints.MinWidth = 790
+    TabOrder = 0
+    object bAdd: TSpeedButton
+      Left = 16
+      Height = 28
+      Top = 2
+      Width = 150
+      Caption = 'Добавить клиента'
+      OnClick = bAddClick
+    end
+    object bEdit: TSpeedButton
+      Left = 200
+      Height = 28
+      Top = 2
+      Width = 170
+      Caption = 'Редактировать клиента'
+      OnClick = bEditClick
+    end
+    object bDel: TSpeedButton
+      Left = 424
+      Height = 28
+      Top = 2
+      Width = 150
+      Caption = 'Удалить клиента'
+      OnClick = bDelClick
+    end
+    object bSort: TSpeedButton
+      Left = 616
+      Height = 28
+      Top = 0
+      Width = 150
+      Caption = 'Сортировать список'
+      OnClick = bSortClick
+    end
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 360
+    Top = 40
+    Width = 800
+    ColRowDragIndicatorColor = clSkyBlue
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+  end
+end
